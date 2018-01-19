@@ -15,20 +15,23 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
  */
 @TeleOp
 public class FirstPrimulClass extends LinearOpMode {
-    private Gyroscope imu;
-    private DcMotor motorTest;
-    private DigitalChannel digitalTouch;
-    private DistanceSensor sensorColorRange;
-    private Servo servoTest;
+    //private Gyroscope imu;
+    private DcMotor motorRight,motorLeft;
+    //private DigitalChannel digitalTouch;
+    //private DistanceSensor sensorColorRange;
+    //private Servo servoTest;
     //private TouchSensor digitalTouch;
     @Override
     public void runOpMode() {
-        imu = hardwareMap.get(Gyroscope.class, "imu");
-        motorTest = hardwareMap.get(DcMotor.class, "motorTest");
-        digitalTouch = hardwareMap.get(DigitalChannel.class, "digitalTouch");
-        sensorColorRange = hardwareMap.get(DistanceSensor.class, "sensorColorRange");
-        servoTest = hardwareMap.get(Servo.class, "servoTest");
-        servoTest= hardwareMap.servo.get("servoTest");
+        motorRight = hardwareMap.get(DcMotor.class, "motorRight");
+
+        motorLeft = hardwareMap.get(DcMotor.class, "motorLeft");
+        //imu = hardwareMap.get(Gyroscope.class, "imu");
+        //motorTest = hardwareMap.get(DcMotor.class, "motorTest");
+        //digitalTouch = hardwareMap.get(DigitalChannel.class, "digitalTouch");
+        //sensorColorRange = hardwareMap.get(DistanceSensor.class, "sensorColorRange");
+        //servoTest = hardwareMap.get(Servo.class, "servoTest");
+        //servoTest= hardwareMap.servo.get("servoTest");
         //digitalTouch = hardwareMap.touchSensor.get("digitalTouch");
         telemetry.addData("Status", "Initialized");
         telemetry.update();
@@ -43,12 +46,18 @@ public class FirstPrimulClass extends LinearOpMode {
               //  motorTest.setPower(0);
             //}
             //servoTest.setPosition(0.5);
-           motorTest.setPower(1.0);
-            //servoTest.setPosition(0.5);
-            sleep(1000);
-            motorTest.setPower(0);
-            sleep(1000);
-            //servoTest.setPosition(0.7);
+            motorLeft.setPower(1.0);
+            motorRight.setPower(-1.0);
+            sleep(2000);
+            motorLeft.setPower(1.0);
+            motorRight.setPower(1.0);
+            sleep(2000);
+            motorLeft.setPower(-1.0);
+            motorRight.setPower(-1.0);
+            sleep(2000);
+            motorLeft.setPower(-1.0);
+            motorRight.setPower(1.0);
+            sleep(2000);
             telemetry.addData("Status", "Running");
             telemetry.update();
         }
