@@ -16,7 +16,8 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
 @TeleOp
 public class FirstPrimulClass extends LinearOpMode {
     //private Gyroscope imu;
-    private DcMotor motorRight,motorLeft;
+    private DcMotor motorRight, motorLeft;
+
     //private DigitalChannel digitalTouch;
     //private DistanceSensor sensorColorRange;
     //private Servo servoTest;
@@ -41,9 +42,9 @@ public class FirstPrimulClass extends LinearOpMode {
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
             //if(digitalTouch.isPressed()){
-              //  motorTest.setPower(1.0);
+            //  motorTest.setPower(1.0);
             //}else{
-              //  motorTest.setPower(0);
+            //  motorTest.setPower(0);
             //}
             //servoTest.setPosition(0.5);
             motorLeft.setPower(1.0);
