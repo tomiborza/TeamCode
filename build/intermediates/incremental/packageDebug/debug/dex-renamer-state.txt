@@ -1,4 +1,4 @@
-#Fri Jan 19 09:54:48 EET 2018
-base.0=/Users/tomi/Documents/ftc/ftc_app-master/TeamCode/build/intermediates/transforms/dexMerger/debug/37
+#Fri Feb 02 17:18:59 EET 2018
+base.0=D\:\\ftc_app-master\\ftc_app-master\\TeamCode\\build\\intermediates\\transforms\\dexMerger\\debug\\75
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,10 +1,26 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/tomi/Documents/ftc/ftc_app-master/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "D:\\ftc_app-master\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/tomi/.gradle/caches/transforms-1/files-1.1/RobotCore-release.aar/548d47dfc5b3103aa5c442ee453d7989/res/values-v11/values-v11.xml",
+                    "source": "C:\\Users\\Steve\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5b7fed954b86a22c4198e81bfd479dba\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "187"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\Users\\tomi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\548d47dfc5b3103aa5c442ee453d7989\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
