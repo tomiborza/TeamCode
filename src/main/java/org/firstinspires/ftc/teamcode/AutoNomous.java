@@ -4,10 +4,11 @@
 
 package org.firstinspires.ftc.teamcode;
 
+        import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
         import android.graphics.Color;
-
         import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
         import com.qualcomm.robotcore.hardware.DcMotor;
+        import com.qualcomm.robotcore.hardware.DcMotorSimple;
         import com.qualcomm.robotcore.hardware.Servo;
         import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
         import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -17,7 +18,7 @@ package org.firstinspires.ftc.teamcode;
         import com.qualcomm.robotcore.hardware.TouchSensor;
         import com.qualcomm.robotcore.hardware.ColorSensor;
         import com.qualcomm.hardware.modernrobotics.ModernRoboticsI2cRangeSensor;
-        import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
+
 
 @Autonomous
 public class AutoNomous extends LinearOpMode
@@ -39,6 +40,8 @@ public class AutoNomous extends LinearOpMode
         motorRight = hardwareMap.get(DcMotor.class, "motorRight");
         motorLeft = hardwareMap.get(DcMotor.class, "motorLeft");
         motorGrab = hardwareMap.get(DcMotor.class, "motorGrab");
+
+        motorLeft.setDirection(DcMotorSimple.Direction.REVERSE);
 
         //referinta la senzori culoare + variabile pentru citire
 
@@ -74,9 +77,12 @@ public class AutoNomous extends LinearOpMode
 
         //digitalTouch = hardwareMap.touchSensor.get("digitalTouch");
 
+        rangeSensor = hardwareMap.get(ModernRoboticsI2cRangeSensor.class, "rangeSensor");
+
         telemetry.addData("Status", "Initialized");
         telemetry.update();
         // Wait for the game to start (driver presses PLAY)
+
         waitForStart();
 
         // run until the end of the match (driver presses STOP)
@@ -120,7 +126,7 @@ public class AutoNomous extends LinearOpMode
                 if(redArm > blueArm)
                 {
                     motorRight.setPower(-1);
-                    motorLeft.setPower(1);
+                    motorLeft.setPower(-1);
                     sleep(50);
                     motorRight.setPower(0);
                     motorLeft.setPower(0);
@@ -128,7 +134,7 @@ public class AutoNomous extends LinearOpMode
                 else
                 {
                     motorRight.setPower(1);
-                    motorLeft.setPower(-1);
+                    motorLeft.setPower(1);
                     sleep(50);
                     motorRight.setPower(0);
                     motorLeft.setPower(0);
@@ -139,7 +145,7 @@ public class AutoNomous extends LinearOpMode
                 if(redArm > blueArm)
                 {
                     motorRight.setPower(1);
-                    motorLeft.setPower(-1);
+                    motorLeft.setPower(1);
                     sleep(50);
                     motorRight.setPower(0);
                     motorLeft.setPower(0);
@@ -147,15 +153,12 @@ public class AutoNomous extends LinearOpMode
                 else
                 {
                     motorRight.setPower(-1);
-                    motorLeft.setPower(1);
+                    motorLeft.setPower(-1);
                     sleep(50);
                     motorRight.setPower(0);
                     motorLeft.setPower(0);
                 }
             }
-
-            telemetry.addData("cm", "%.2f cm", rangeSensor.getDistance(DistanceUnit.CM));
-            telemetry.update();
 
             sleep(2000);
 
