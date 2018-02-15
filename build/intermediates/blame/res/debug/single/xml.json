@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\k9legacybot.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\k9legacybot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\pushbot.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\pushbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\rev_scoot.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\rev_scoot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\advanced_rc_settings.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\advanced_rc_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\pushbotsens.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\pushbotsens.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\squarebot.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\squarebot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "C:\\Users\\Filip\\Desktop\\android\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\k9usbbot.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\k9usbbot.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\maxmodules.xml",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\xml\\maxmodules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\xml\\app_settings.xml",
+        "source": "C:\\Users\\Filip\\Desktop\\android\\FtcRobotController\\build\\intermediates\\bundles\\default\\res\\xml\\app_settings.xml"
+    }
+]

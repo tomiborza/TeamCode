@@ -1,57 +1,115 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.qualcomm.robotcore.hardware.Gyroscope;
-import com.qualcomm.robotcore.hardware.DigitalChannel;
-import com.qualcomm.robotcore.hardware.DistanceSensor;
-import com.qualcomm.robotcore.hardware.TouchSensor;
+import com.qualcomm.robotcore.hardware.DcMotor;
 
-
-/**
- * Created by tomi on 1/18/18.
- */
 @TeleOp
-public class FirstPrimulClass extends LinearOpMode {
-    private Gyroscope imu;
-    private DcMotor motorTest;
-    private DigitalChannel digitalTouch;
-    private DistanceSensor sensorColorRange;
-    private Servo servoTest;
-    //private TouchSensor digitalTouch;
-    @Override
-    public void runOpMode() {
-        imu = hardwareMap.get(Gyroscope.class, "imu");
-        motorTest = hardwareMap.get(DcMotor.class, "motorTest");
-        digitalTouch = hardwareMap.get(DigitalChannel.class, "digitalTouch");
-        sensorColorRange = hardwareMap.get(DistanceSensor.class, "sensorColorRange");
-        servoTest = hardwareMap.get(Servo.class, "servoTest");
-        servoTest= hardwareMap.servo.get("servoTest");
-        //digitalTouch = hardwareMap.touchSensor.get("digitalTouch");
-        telemetry.addData("Status", "Initialized");
-        telemetry.update();
-        // Wait for the game to start (driver presses PLAY)
-        waitForStart();
+public class FirstPrimulClass extends OpMode {
 
-        // run until the end of the match (driver presses STOP)
-        while (opModeIsActive()) {
-            //if(digitalTouch.isPressed()){
-              //  motorTest.setPower(1.0);
-            //}else{
-              //  motorTest.setPower(0);
-            //}
-            //servoTest.setPosition(0.5);
-           motorTest.setPower(1.0);
-            //servoTest.setPosition(0.5);
-            sleep(1000);
-            motorTest.setPower(0);
-            sleep(1000);
-            //servoTest.setPosition(0.7);
-            telemetry.addData("Status", "Running");
-            telemetry.update();
+    private DcMotor motorRight, motorLeft, motorGrab = null;
+
+    private Servo servoGrabRight, servoGrabLeft;
+
+    int position = 0;
+
+    boolean ok = false;
+
+
+    @Override
+    public void init() {
+
+        motorRight = hardwareMap.get(DcMotor.class, "motorRight");
+        motorLeft = hardwareMap.get(DcMotor.class, "motorLeft");
+        motorGrab = hardwareMap.get(DcMotor.class, "motorGrab");
+
+        motorLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+
+        motorGrab.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        motorGrab.setMode(DcMotor.RunMode.RUN_TO_POSITION);
+        motorGrab.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+
+        servoGrabRight = hardwareMap.get(Servo.class, "servoGrabRight");
+        servoGrabRight = hardwareMap.servo.get("servoGrabRight");
+        servoGrabLeft = hardwareMap.get(Servo.class, "servoGrabLeft");
+        servoGrabLeft = hardwareMap.servo.get("servoGrabLeft");
+
+        servoGrabLeft.setDirection(Servo.Direction.REVERSE);
+    }
+
+    @Override
+    public void loop() {
+        motorLeft.setPower(gamepad1.left_stick_y);
+        motorRight.setPower(gamepad1.right_stick_y);
+
+        if(!ok) {
+            position = motorGrab.getCurrentPosition();
+        }
+        else if (motorGrab.getCurrentPosition() > position + 500) {
+            servoGrabRight.setPosition(0.9);
+            servoGrabLeft.setPosition(1);
+            ok = false;
+        }
+        if (gamepad2.dpad_up) {
+            motorGrab.setTargetPosition(position + 50);
+            motorGrab.setPower(0.25);
+        }
+        if (gamepad2.dpad_down) {
+            motorGrab.setTargetPosition(position - 50);
+            motorGrab.setPower(0.1);
+        }
+        if (gamepad2.a && gamepad2.left_stick_button) {
+            ok = true;
+            motorGrab.setTargetPosition(position + 560);
+            motorGrab.setPower(0.75);
+        }
+        if (gamepad2.x) {
+            servoGrabRight.setPosition(0.65);
+            servoGrabLeft.setPosition(0.70);
+        }
+        if (gamepad2.b) {
+            servoGrabRight.setPosition(0.9);
+            servoGrabLeft.setPosition(1);
+        }
+        if (gamepad1.a) {
+            motorLeft.setPower(1);
+            motorRight.setPower(1);
+        }
+        if (gamepad1.y) {
+            motorLeft.setPower(-1);
+            motorRight.setPower(-1);
         }
 
+       /* if (gamepad1.left_bumper) {
+            motorLeft.setPower(-0.5);
+        }
+        if (gamepad1.right_bumper) {
+            motorRight.setPower(-0.5);
+        }
+        if (gamepad1.dpad_up) {
+            motorLeft.setPower(-0.5);
+            motorRight.setPower(-0.5);
+        }
+        if (gamepad1.dpad_down) {
+            motorRight.setPower(0.5);
+            motorLeft.setPower(0.5);
+        }*/
+
+        if (gamepad1.left_bumper) {
+            motorLeft.setPower(-0.5);
+            motorRight.setPower(-0.5);
+        }
+        if (gamepad1.right_bumper) {
+            motorRight.setPower(0.5);
+            motorLeft.setPower(0.5);
+        }
+        if (gamepad1.dpad_left) {
+            motorRight.setPower(-0.5);
+        }
+        if (gamepad1.dpad_right) {
+            motorLeft.setPower(-0.5);
+        }
     }
 }

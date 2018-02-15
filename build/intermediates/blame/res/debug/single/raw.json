@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\texture_fragment_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\texture_vertex_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\nxtstartupsound.wav",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\raw\\nxtstartupsound.wav"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_fragment_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\color_fragment_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\color_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\chimedisconnect.wav",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\raw\\chimedisconnect.wav"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\simple_vertex_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\errormessage.wav",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\raw\\errormessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\cube_mesh_vertex_shader.glsl",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\874773254e7b259594368311375c4e43209d2398\\output\\res\\raw\\cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\warningmessage.wav",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\raw\\warningmessage.wav"
+    },
+    {
+        "merged": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\res\\merged\\debug\\raw\\chimeconnect.wav",
+        "source": "C:\\Users\\Filip\\.android\\build-cache\\0c82e004faa8cc4e8dbb00a6f7c7e5054238e117\\output\\res\\raw\\chimeconnect.wav"
+    }
+]
