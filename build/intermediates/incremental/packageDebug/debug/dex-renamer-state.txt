@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Tue Feb 13 09:19:30 EET 2018
 base.0=C\:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\transforms\\dexMerger\\debug\\37
+=======
+#Sun Feb 04 15:25:49 EET 2018
+base.0=D\:\\ftc_app-master\\ftc_app-master\\TeamCode\\build\\intermediates\\transforms\\dexMerger\\debug\\75
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24
 path.0=classes.dex
 renamed.0=classes.dex

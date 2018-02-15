@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main"><source path="C:\Users\Filip\Desktop\android\TeamCode\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Filip\Desktop\android\TeamCode\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main"><source path="D:\ftc_app-master\ftc_app-master\TeamCode\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\ftc_app-master\ftc_app-master\TeamCode\src\debug\shaders"/></dataSet></merger>
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24

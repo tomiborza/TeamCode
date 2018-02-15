@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Filip\\Desktop\\android\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+=======
+            "outputFile": "D:\\ftc_app-master\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\ftc_app-master\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +23,17 @@
             ]
         },
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+=======
+            "outputFile": "D:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\FtcRobotController\\build\\intermediates\\bundles\\debug\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

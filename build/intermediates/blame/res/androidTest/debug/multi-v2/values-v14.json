@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tomi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\548d47dfc5b3103aa5c442ee453d7989\\res\\values-v14\\values-v14.xml",
+=======
+            "outputFile": "D:\\Users\\tomi\\Documents\\ftc\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "D:\\Users\\tomi\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\548d47dfc5b3103aa5c442ee453d7989\\res\\values-v14\\values-v14.xml",
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -17,10 +24,17 @@
             ]
         },
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\Filip\\Desktop\\android\\TeamCode\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Filip\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\c4d44be049504d5581b20f645b2d4a47\\res\\values-v14\\values-v14.xml",
+=======
+            "outputFile": "D:\\ftc_app-master\\ftc_app-master\\TeamCode\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Steve\\.gradle\\caches\\transforms-1\\files-1.1\\RobotCore-release.aar\\5b7fed954b86a22c4198e81bfd479dba\\res\\values-v14\\values-v14.xml",
+>>>>>>> c34eb92ad710932e4893434cae12dfdb166a8e24
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
